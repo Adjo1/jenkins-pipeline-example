@@ -6,8 +6,9 @@ pipeline {
         jdk "JDK"
     }
     stages {
-        stage('Initialize'){
+        stage('Initialize'){ 
            steps{
+                echo "Initialisation"
                 echo "PATH = ${M2_HOME}/bin:${PATH}"
                 echo "M2_HOME = /opt/maven"
             }
